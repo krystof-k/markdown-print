@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Variables
+# - directories
+content_dir="./content"
+chapters_dir="$content_dir/chapters"
+scripts_dir="./scripts"
+pandoc_dir="$scripts_dir/pandoc"
+output_dir="./output"
+# - files
+references_file="$content_dir/references/references.yaml"
+template_file="$pandoc_dir/template.latex"
+tmp_file="$output_dir/.tmp"
+source_file=$tmp_file
+output_file="$output_dir/prejmenovat.pdf"
+# - colors
+red_color='\033[0;31m'
+no_color='\033[0m' # No Color
+
+# Check if content directory exists
+if [ ! -d "$content_dir" ]; then
+  echo -e "${red_color}Error:${no_color} Content directory '$content_dir)' doesn't exist."
+  exit 1
+fi
+
+# Ensure output directory exists, if not, create it
+mkdir -p $output_dir
+
+# Merge all chapters into .tmp
+# - for each file in directory
+for file in $chapters_dir/*;
+do
+# - Insert contents into .tmp and add newline
+  (cat "${file}"; echo;) >> $tmp_file
+done
+
+pandoc -s \
+  --template $template_file \
+  --filter pandoc-citeproc \
+  --bibliography $references_file \
+  $source_file -o $output_file
+
+# Clean
+rm $tmp_file
