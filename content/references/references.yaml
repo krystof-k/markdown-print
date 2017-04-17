@@ -1,0 +1,12 @@
+---
+references:
+- id: thinking-fast-and-slow
+  type: book
+  author:
+  - family: Kahneman
+    given: Daniel
+  issued:
+  - year: 2011
+  title: Thinking, Fast and Slow
+  publisher: Farrar, Straus and Giroux
+---
