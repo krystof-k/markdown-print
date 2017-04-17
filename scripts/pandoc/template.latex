@@ -221,6 +221,30 @@ $if(institute)$
 $endif$
 \date{$date$}
 
+% Custom overrides
+% ================
+
+% Remove Table of Contents heading
+\makeatletter
+\renewcommand\tableofcontents{%
+    \@starttoc{toc}%
+}
+\makeatother
+
+% Remove List of Figures heading
+\makeatletter
+\renewcommand\listoffigures{%
+    \@starttoc{lof}%
+}
+\makeatother
+
+% Remove List of Tables heading
+\makeatletter
+\renewcommand\listoftables{%
+    \@starttoc{lot}%
+}
+\makeatother
+
 \begin{document}
 $if(title)$
 \maketitle
