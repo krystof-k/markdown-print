@@ -66,9 +66,11 @@ Citations with [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) are a p
 
 #### Collection
 
-Sources collection is placed in `content/references/references.yaml` file. It uses the CSL YAML format. See Citation Style Language see [specification](http://docs.citationstyles.org/en/stable/specification.html), especially useful is [list of types](http://docs.citationstyles.org/en/stable/specification.html#appendix-iii-types) and [variables](http://docs.citationstyles.org/en/stable/specification.html#appendix-iv-variables).
+Sources collections are placed in `content/references` folder. You can add as many files as you want.
 
-YAML is a human-readable data serialization language, so it's easy to write the collection by hand. Otherwise it is based on [CSL JSON](https://github.com/citation-style-language/schema) format.
+You can use a lot of formats (see [list](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md#filter-mode)), most notably BibTeX, which can be downloaded at many services like [Google Scholar](https://scholar.google.com)/[Books](https://books.google.com). 
+
+If you want to manage the collection manually, the most convenient option is to use CSL YAML format (don't forget to add `.yaml` extension to your file). CSL means *Citation Style Language*, see [specification](http://docs.citationstyles.org/en/stable/specification.html), especially useful is [list of types](http://docs.citationstyles.org/en/stable/specification.html#appendix-iii-types) and [variables](http://docs.citationstyles.org/en/stable/specification.html#appendix-iv-variables). YAML is a human-readable data serialization language, so it's easy to write the collection by hand. Otherwise it is based on [CSL JSON](https://github.com/citation-style-language/schema) format.
 
 The file has to start with:
 
