@@ -1,19 +1,19 @@
 #!/bin/bash
 
 # Variables
-# - directories
+#   - Directories
 content_dir="./content"
 chapters_dir="$content_dir/chapters"
 scripts_dir="./scripts"
 pandoc_dir="$scripts_dir/pandoc"
 output_dir="./output"
-# - files
+#   - Files
 references_file="$content_dir/references/references.yaml"
 template_file="$pandoc_dir/template.latex"
 tmp_file="$output_dir/.tmp"
 source_file=$tmp_file
 output_file="$output_dir/prejmenovat.pdf"
-# - colors
+#   - Colors
 red_color='\033[0;31m'
 no_color='\033[0m' # No Color
 
@@ -27,10 +27,10 @@ fi
 mkdir -p $output_dir
 
 # Merge all chapters into .tmp
-# - for each file in directory
+#   - For each file in directory
 for file in $chapters_dir/*;
 do
-# - Insert contents into .tmp and add newline
+#   - Insert contents into .tmp and add newline
   (cat "${file}"; echo;) >> $tmp_file
 done
 
