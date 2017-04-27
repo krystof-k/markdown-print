@@ -93,10 +93,13 @@ Between these lines, there's a space for your sources. Let's try *Thinking, Fast
   author:
   - family: Kahneman
     given: Daniel 
+  title: Thinking, Fast and Slow
+  edition: 1
   issued:
   - year: 2011
-  title: Thinking, Fast and Slow
   publisher: Farrar, Straus and Giroux
+  publisher-place: New York
+  ISBN: 978-0374275631
 ```
 
 Nothing difficult, right? It's important to keep the indentation precise. As `id` you can use any string – you'll reference it later in the text. So the whole file may look like this:
@@ -109,10 +112,13 @@ references:
   author:
   - family: Kahneman
     given: Daniel 
+  title: Thinking, Fast and Slow
+  edition: 1
   issued:
   - year: 2011
-  title: Thinking, Fast and Slow
   publisher: Farrar, Straus and Giroux
+  publisher-place: New York
+  ISBN: 978-0374275631
 ---
 ```
 
