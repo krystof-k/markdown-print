@@ -245,6 +245,9 @@ $endif$
 }
 \makeatother
 
+% Links before figures
+\usepackage[all]{hypcap}
+
 \begin{document}
 $if(title)$
 \maketitle

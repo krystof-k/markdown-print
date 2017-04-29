@@ -62,6 +62,7 @@ source ~/.bash_profile
 
 - [Citations & references](#citations-references)
 - [Footnotes](#footnotes)
+- [Figures](#figures)
 
 ### Citations & references
 
@@ -147,3 +148,28 @@ You can use also footnote identifiers, which separates the footnote content.[^fo
     Just don't forget to indent other paragraphs by four spaces.
 ```
 
+### Figures
+
+Inserting figures – or photos/images/illustrations/schemes/whatever-you-want-to-call-it – works in the same way as inserting images in Markdown. Just be sure the image is in a separate paragraph.
+
+```markdown
+![Cat picture](http://lorempixel.com/400/200/cats)
+```
+
+Figure is then automatically annotated and added to *List of figures*. If you don't want *List of figures*, simply delete the `0-03-list-of-figures.md` file.
+
+But because you'll probably want to reference the figures in the text, the syntax gets a bit more complicated:
+
+```markdown
+![One more cat picture \label{fig:figure}](http://lorempixel.com/400/200/cats){#fig:figure}
+
+See the cat in [\autoref{fig:figure}](#fig:figure).
+```
+
+Where `figure` presents unique identifier of the certain figure.
+
+If you want to insert an image not as an figure, simply add backslash at the end:
+
+```markdown
+![Another cat picture, but not a figure](http://lorempixel.com/400/200/cats)\
+```
