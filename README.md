@@ -55,7 +55,7 @@ And you should see a newly created PDF file in `output` folder.
 # Append correct path to .bash_profile
 echo "export PATH="$PATH:/Library/TeX/texbin"" >> ~/.bash_profile
 # Update shell 
-$ source ~/.bash_profile
+source ~/.bash_profile
 ```
 
 ## Let's start writing
