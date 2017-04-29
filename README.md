@@ -60,11 +60,14 @@ $ source ~/.bash_profile
 
 ## Let's start writing
 
+- [Citations & references](#citations-references)
+- [Footnotes](#footnotes)
+
 ### Citations & references
 
 Citations with [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) are a piece of cake. Just collect all sources at one place and then reference them during writing.
 
-#### Collection
+#### Preparing the collections
 
 Sources collections are placed in `content/references` folder. You can add as many files as you want.
 
@@ -122,6 +125,25 @@ references:
 ---
 ```
 
-#### Citations
+#### In-text citations
 
 And now the easier part. See [Pandoc User's Guide](http://pandoc.org/MANUAL.html#citations).
+
+### Footnotes
+
+Inserting footnotes is totally simple. The first and simplier approach allows you to write footnotes directly in text:
+
+```markdown
+This is a text with footnote.^[…and this the inline footnote itself.]
+```
+
+If you prefer to separate the footnotes, you can reference the footnote by an identifier. Identifier can be anything (except it cannot contain spaces) and it has to be unique throughout the document – footnotes will be numbered sequentially automatically.
+
+```markdown
+You can use also footnote identifiers, which separates the footnote content.[^footnote]
+
+[^footnote]: It's a good thing that in that case, you can use multiple paragraphs within the footnote.
+
+    Just don't forget to indent other paragraphs by four spaces.
+```
+
