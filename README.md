@@ -47,9 +47,9 @@ And now, let's try if everything works fine. Run:
 ./scripts/build
 ```
 
-And you should see a newly created PDF file in `output` folder.
+And you should see a newly created PDF file in the `output` folder.
 
-*If you get `pdflatex not found` error, this commands should fix it:*
+*If you get `pdflatex not found` error, these commands should fix it:*
 
 ```sh
 # Append correct path to .bash_profile
