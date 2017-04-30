@@ -63,6 +63,7 @@ source ~/.bash_profile
 - [Citations & references](#citations-references)
 - [Footnotes](#footnotes)
 - [Figures](#figures)
+- [Tables](#tables)
 
 ### Citations & references
 
@@ -173,3 +174,31 @@ If you want to insert an image not as an figure, simply add backslash at the end
 ```markdown
 ![Another cat picture, but not a figure](http://lorempixel.com/400/200/cats)\
 ```
+
+### Tables
+
+Inserting tables is a bit more complicated, especially if you want to use advanced formatting (in that case see [Pandoc manual](http://pandoc.org/MANUAL.html#tables)). But inserting a simple table is easy:
+
+```markdown
+Table: This is a table caption, you can even use a citation [@thinking-fast-and-slow]
+
+First column  | Centered column | Right aligned column
+------------- |:---------------:| -------------------:
+First row     | Second cell     | 1234
+Second row    | Centered cell   | 4567
+3rd row       | …another cell   | 89
+```
+
+If you want to reference a table, it works in a similar way as with figures:
+
+```markdown
+This is a reference to [\autoref{tab:table}](#tab:table).
+
+Table: [This is a table without header, but with a reference]{#tab:table} \label{tab:table}
+
+-----------    ----------------
+Another way    to insert tables
+This time      without header
+-----------    ----------------
+```
+
