@@ -183,7 +183,7 @@ If you want to insert an image not as an figure, simply add backslash at the end
 
 ### Tables
 
-Inserting tables is a bit more complicated, especially if you want to use advanced formatting (in that case see [Pandoc manual](http://pandoc.org/MANUAL.html#tables)). But inserting a simple table is easy:
+Inserting tables is a bit more complicated, especially if you want to use advanced formatting (in that case see [Pandoc manual](http://pandoc.org/MANUAL.html#tables)). But not that much:
 
 ```markdown
 Table: This is a table caption, you can even use a citation [@thinking-fast-and-slow]
@@ -208,3 +208,4 @@ This time      without header
 -----------    ----------------
 ```
 
+Tables are again automatically listed in *List of tables*, if you don't want that, simply delete the `0-04-list-of-tables.md` file.
