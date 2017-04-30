@@ -169,6 +169,12 @@ See the cat in [\autoref{fig:figure}](#fig:figure).
 
 Where `figure` presents unique identifier of the certain figure.
 
+As you can see, it's possible to link images directly from the internet, which is definitely not recommended. This is how you can insert local file, even PDF. Figures are saved in `content/figures` folder.
+
+```markdown
+![Local figure as PDF](./content/figures/figure.pdf)
+```
+
 If you want to insert an image not as an figure, simply add backslash at the end:
 
 ```markdown
