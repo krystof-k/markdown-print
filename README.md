@@ -100,10 +100,10 @@ Between these lines, there's a space for your sources. Let's try *Thinking, Fast
     given: Daniel 
   title: Thinking, Fast and Slow
   edition: 1
-  issued:
-  - year: 2011
   publisher: Farrar, Straus and Giroux
   publisher-place: New York
+  issued:
+  - year: 2011
   ISBN: 978-0374275631
 ```
 
@@ -119,10 +119,10 @@ references:
     given: Daniel 
   title: Thinking, Fast and Slow
   edition: 1
-  issued:
-  - year: 2011
   publisher: Farrar, Straus and Giroux
   publisher-place: New York
+  issued:
+  - year: 2011
   ISBN: 978-0374275631
 ---
 ```
