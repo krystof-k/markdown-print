@@ -1,0 +1,7 @@
+---
+# Edit this path if you want to use different citation style
+csl: ./scripts/pandoc/csl/official/iso690-numeric-cs.csl
+# Uncomment next two lines if you want to list even uncited references
+#nocite: |
+#  @*
+---
