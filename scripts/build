@@ -39,9 +39,10 @@ done
 #   b) List all files in references directory
 #   c) Convert newlines to commas
 #   d) Remove trailing comma
+#   e) Convert commas to --bibliography
 count=`ls "$references_dir" | wc -l`
 if [ $count != 1 ]; then
-  references_files={$(find $references_dir/* | tr '\n' ',' | sed s'/,$//')}
+  references_files=$(find $references_dir/* | tr '\n' ',' | sed s'/,$//' | sed s'/,/ --bibliography /g')
 else
   references_files=$(find $references_dir/*)
 fi
