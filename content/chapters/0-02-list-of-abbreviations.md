@@ -1,3 +1,3 @@
-# List of abbreviations
+# List of abbreviations {-}
 
 \newpage

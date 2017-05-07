@@ -1,4 +1,4 @@
-# Bibliography
+# Bibliography {-}
 
 <div id="refs"></div>
 

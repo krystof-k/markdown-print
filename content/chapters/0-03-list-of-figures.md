@@ -1,4 +1,4 @@
-# List of figures
+# List of figures {-}
 
 \listoffigures
 

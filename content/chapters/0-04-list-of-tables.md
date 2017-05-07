@@ -1,4 +1,4 @@
-# List of tables
+# List of tables {-}
 
 \listoftables
 
