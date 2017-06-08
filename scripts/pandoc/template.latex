@@ -245,6 +245,17 @@ $endif$
 }
 \makeatother
 
+% Add appendix numbering support
+\makeatletter
+\newcommand\appendix@section[1]{%
+  \refstepcounter{section}%
+  \orig@section*{\appendixname\space\@Alph\c@section: #1}%
+  \addcontentsline{toc}{section}{\appendixname\space\@Alph\c@section: #1}%
+}
+\let\orig@section\section
+\g@addto@macro\appendix{\let\section\appendix@section}
+\makeatother
+
 % Links before figures
 \usepackage[all]{hypcap}
 

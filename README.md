@@ -64,6 +64,7 @@ source ~/.bash_profile
 - [Footnotes](#footnotes)
 - [Figures](#figures)
 - [Tables](#tables)
+- [Appendices](#appendices)
 
 ### Citations & references
 
@@ -209,3 +210,7 @@ This time      without header
 ```
 
 Tables are again automatically listed in *List of tables*, if you don't want that, simply delete the `0-04-list-of-tables.md` file.
+
+### Appendices
+
+You can add appendices. It's important to name the files beginning with `3`. You can add as many appendices as you want, all will be numbered by letter. To change the appendices name (from *Appendix* to something else), edit `0-00-metadata-and-settings.yaml` file.
