@@ -155,7 +155,7 @@ You can use also footnote identifiers, which separates the footnote content.[^fo
 Inserting figures – or photos/images/illustrations/schemes/whatever-you-want-to-call-it – works in the same way as inserting images in Markdown. Just be sure the image is in a separate paragraph.
 
 ```markdown
-![Cat picture](http://lorempixel.com/400/200/cats)
+![Cat picture](https://placekitten.com/400/200)
 ```
 
 Figure is then automatically annotated and added to *List of figures*. If you don't want *List of figures*, simply delete the `0-03-list-of-figures.md` file.
@@ -163,7 +163,7 @@ Figure is then automatically annotated and added to *List of figures*. If you do
 But because you'll probably want to reference the figures in the text, the syntax gets a bit more complicated:
 
 ```markdown
-![One more cat picture \label{fig:figure}](http://lorempixel.com/400/200/cats){#fig:figure}
+![One more cat picture \label{fig:figure}](https://placekitten.com/400/200){#fig:figure}
 
 See the cat in [\autoref{fig:figure}](#fig:figure).
 ```
@@ -179,7 +179,7 @@ As you can see, it's possible to link images directly from the internet, which i
 If you want to insert an image not as an figure, simply add backslash at the end:
 
 ```markdown
-![Another cat picture, but not a figure](http://lorempixel.com/400/200/cats)\
+![Another cat picture, but not a figure](https://placekitten.com/400/200)\
 ```
 
 ### Tables
