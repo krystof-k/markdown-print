@@ -34,7 +34,7 @@ mkdir -p $output_dir
 for file in $chapters_dir/*;
 do
   if [ `echo "$(basename ${file})" | head -c 1` == 3 ] && [ "$appendix_inserted" != true ]; then
-    echo "\\\appendix\n\r" >> $tmp_file
+    printf '\\appendix\r\n\r\n' >> $tmp_file
     appendix_inserted=true
   fi
   (cat "${file}"; echo;) >> $tmp_file
