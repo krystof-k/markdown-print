@@ -81,51 +81,42 @@ If you want to manage the collection manually, the most convenient option is to 
 The file has to start with:
 
 ```yaml
----
 references:
 ```
 
-and again end with:
+Below, there's a space for your sources. Let's try *Thinking, Fast and Slow by Daniel Kahneman* book:
 
 ```yaml
----
-```
-
-Between these lines, there's a space for your sources. Let's try *Thinking, Fast and Slow by Daniel Kahneman* book:
-
-```yaml
-- id: thinking-fast-and-slow
-  type: book
-  author:
-  - family: Kahneman
-    given: Daniel 
-  title: Thinking, Fast and Slow
-  edition: 1
-  publisher: Farrar, Straus and Giroux
-  publisher-place: New York
-  issued:
-  - year: 2011
-  ISBN: 978-0374275631
+  - id: thinking-fast-and-slow
+    type: book
+    author:
+      - family: Kahneman
+        given: Daniel 
+    title: Thinking, Fast and Slow
+    edition: 1
+    publisher: Farrar, Straus and Giroux
+    publisher-place: New York
+    issued:
+    - year: 2011
+    ISBN: 978-0374275631
 ```
 
 Nothing difficult, right? It's important to keep the indentation precise. As `id` you can use any string – you'll reference it later in the text. So the whole file may look like this:
 
 ```yaml
----
 references:
-- id: thinking-fast-and-slow
-  type: book
-  author:
-  - family: Kahneman
-    given: Daniel 
-  title: Thinking, Fast and Slow
-  edition: 1
-  publisher: Farrar, Straus and Giroux
-  publisher-place: New York
-  issued:
-  - year: 2011
-  ISBN: 978-0374275631
----
+  - id: thinking-fast-and-slow
+    type: book
+    author:
+      - family: Kahneman
+        given: Daniel 
+    title: Thinking, Fast and Slow
+    edition: 1
+    publisher: Farrar, Straus and Giroux
+    publisher-place: New York
+    issued:
+      - year: 2011
+    ISBN: 978-0374275631
 ```
 
 #### In-text citations

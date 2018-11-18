@@ -1,15 +1,13 @@
----
 references:
 - id: thinking-fast-and-slow
   type: book
   author:
-  - family: Kahneman
-    given: Daniel
+    - family: Kahneman
+      given: Daniel
   title: Thinking, Fast and Slow
   edition: 1
   publisher: Farrar, Straus and Giroux
   publisher-place: New York
   issued:
-  - year: 2011
+    - year: 2011
   ISBN: 978-0374275631
----
