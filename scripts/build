@@ -68,6 +68,7 @@ eval "pandoc -s\
   --template $template_file\
   --number-sections \
   --filter pandoc-citeproc\
+  --pdf-engine=xelatex\
   $bibliography\
   $source_file -o $output_file"
 
